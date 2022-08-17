@@ -8,35 +8,19 @@ body {
     margin: 0
 }
 
-main {
-    display: block
-}
+
 
 h1 {
     font-size: 2em;
     margin: .67em 0
 }
 
-hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible
-}
 
-pre {
-    font-family: monospace, monospace;
-    font-size: 1em
-}
 
 a {
     background-color: transparent
 }
 
-abbr[title] {
-    border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
-}
 
 b,
 strong {
@@ -50,9 +34,6 @@ samp {
     font-size: 1em
 }
 
-small {
-    font-size: 80%
-}
 
 sub,
 sup {
@@ -198,31 +179,14 @@ a:link {
     text-decoration: none;
 }
 a:visited {
-    font-style: italic;
+    font-style: normal;
 }
-a:hover {
-    text-decoration: underline;
+
+a.nav-link:hover {
+    color: var(--color-button);
 }
-a:active {
-    background-color: var(--color-light-grey);
-}
-.button {
-    display: var(--button-display);
-    padding: var(--button-padding);
-    border: var(--button-border);
-    font-size: var(--button-font-size);
-    color: var(--button-color);
-    text-decoration: var(--button-text-decoration);
-    background: var(--color-button);
-    border-radius: 22px;
-    
-}
+
 .button1{
-    position: absolute;
-    left: 37.21%;
-    right: 37.36%;
-    top: 31.95%;
-    bottom: 53.99%;
     filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
     display: var(--button-display);
     padding: var(--button-padding);
@@ -232,7 +196,9 @@ a:active {
     text-decoration: var(--button-text-decoration);
     background: var(--color-button);
     border-radius: 22px;
+    display: inline-block;
 }
+
 .button:hover, .button1:hover {
     color: var(--transition-property);
     text-decoration: var(--button-hover-text-decoration);
@@ -247,9 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 .visually-hidden {
     display: none;
 }
-.card-category {
-    color:var(--color-primary);
-}
+
 .section-title{
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
@@ -269,12 +233,12 @@ h1, h2, h3, h4, h5, h6 {
     --color-white:#ffffff;
     --color-light-grey:#f3f3f3;
     --color-dark-grey:#353535;
-    --text-color: var(--color-black);
+    --text-color: var(--color-white);
     --font-family-base: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
+    --font-size-large: 1.5rem;
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
     --font-weight-regular: 400;
@@ -283,25 +247,21 @@ h1, h2, h3, h4, h5, h6 {
     --line-height-base: 1.5;
     --line-height-big: 1.8;
     --section-header-align: center;
-    --section-tagline-transform: uppercase;
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-body-padding: 0 0 3rem;
-    --section-footer-padding: 3rem 0 0;
-    --section-footer-align: center;
-    --footer-padding: 5rem 0 1rem;
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.04rem;;
+    --nav-item-letter-spacing: 0.1rem;;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;;
     --nav-item-link-hover: var(--color-white);
     --section-tagline-margin: 0;
     --button-display: inline-block;
-    --button-padding: 1.5rem 3rem;
+    --button-padding: 1rem 1rem;
     --button-color: var(--color-primary);
     --button-text-decoration: none;
     --button-font-size: var(--font-size-large);
@@ -340,7 +300,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
-    font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
     display: var(--nav-item-display);
     margin: var(--nav-item-margin);
@@ -348,6 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
+    color: var(--color-white);
 }
 
 
