@@ -67,24 +67,24 @@ textarea {
     margin: 0
 }
 
-button, button1,
+button,
 input {
     overflow: visible
 }
 
-button, button1,
+button,
 select {
     text-transform: none
 }
 
-[type=button, button1],
+[type=button],
 [type=reset],
 [type=submit],
 button, button {
     -webkit-appearance: button
 }
 
-[type=button, button1]::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -202,10 +202,11 @@ a.nav-link:hover {
 .button:hover, .button1:hover {
     color: var(--transition-property);
     text-decoration: var(--button-hover-text-decoration);
-    background: opacity: 0.9;
     transition-duration: var(--transition-duration);
     transition-property: color, background-color;
+    opacity: 0.9;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
@@ -315,10 +316,12 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("images/headphones_hero_1.jpg");
     background-repeat: no-repeat;
     position: absolute;
-    width: 1403px;
-    height: 804px;
-    left: 0px;
-    top: -8px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    z-index: -1;
 }
 .section-hero .section-title {
     margin-bottom: 5rem;
